@@ -1,0 +1,417 @@
+
+
+ @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+ /* Base styles */
+ 
+ .login {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ 
+ .login__container {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   width: 700px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 10px;
+ }
+ 
+ .login__logo {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .login__desc {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 10px;
+ }
+ 
+ .login__desc > h3 {
+   margin-top: 10px;
+   text-align: center;
+   font-size: xx-large;
+   font-family: "Garamond", cursive;
+ }
+ .login__desc > p {
+   color: #636466;
+   text-align: center;
+   font-weight: 500;
+   font-size: 20px;
+ }
+ 
+ .login__auth {
+   display: flex;
+   margin-top: 50px;
+ }
+ 
+ .login__authOptions {
+   display: flex;
+   flex: 0.5;
+   flex-direction: column;
+   padding: 20px;
+   border-right: 1px solid lightgray;
+ }
+ 
+ .login__authOption {
+   display: flex;
+   align-items: center;
+   padding: 8px;
+   margin-bottom: 15px;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .login__authOption:hover {
+   background-color: rgb(226, 226, 226);
+ }
+ 
+ .login__authOption > img {
+   height: 30px;
+   object-fit: contain;
+ }
+ .login__authOption > .login__googleAuth-fb  {
+   height: 35px;
+   object-fit: contain;
+   
+ }
+ 
+ .login__authOption > p {
+   margin-left: 11px;
+ }
+ 
+ .login__authDesc {
+   display: flex;
+   padding: 7px;
+   margin-bottom: 15px;
+ }
+ 
+ .login__authDesc > p {
+   font-size: small;
+   color: gray;
+   cursor: pointer;
+   margin: auto;
+ }
+ 
+ .login__auth__dec > p {
+   font-size: small;
+   color: gray;
+   margin-bottom: 20px;
+ }
+ 
+ .login__auth__dec > p > span {
+   color: rgb(25, 95, 170);
+   cursor: pointer;
+ }
+ .login__auth__dec > p > span:hover {
+   text-decoration: underline;
+ }
+ 
+ .login__emailPass {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+   flex: 0.5;
+   margin-left: 20px;
+ }
+ 
+ .login__label > h4 {
+   padding: 5px;
+ }
+ 
+ .login__inputFields {
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+ }
+ 
+ .login__inputField {
+   padding: 5px;
+ }
+ 
+ .login__inputField > input {
+   padding: 10px;
+   width: 100%;
+   outline: none;
+   border: none;
+   background-color: rgb(236, 236, 236);
+ }
+ 
+ .login__forgButt {
+   padding-left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .login__forgButt > small {
+   color: gray;
+   cursor: pointer;
+ }
+ 
+ .login__forgButt > small:hover {
+   color: gray;
+   text-decoration: underline;
+ }
+ 
+ .login__forgButt > button {
+   padding: 12px;
+   border-radius: 23px;
+   border: none;
+   outline: none;
+   background-color: blue;
+   color: white;
+   font-weight: bold;
+   font-size: 15px;
+   cursor: pointer;
+ }
+ 
+ .login__emailPass > button {
+   padding: 9px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   background-color: blue;
+   color: white;
+   font-weight: bold;
+   font-size: 15px;
+   cursor: pointer;
+   margin-top: 10px;
+ }
+ 
+ .login__lang {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: 1px solid lightgray;
+   border-bottom: 1px solid lightgray;
+   margin-top: 30px;
+   padding: 10px;
+ }
+ 
+ .login__lang > p {
+   color: gray;
+   margin-right: 5px;
+   cursor: pointer;
+   font-size: 13px;
+ }
+ 
+ .login__lang > p:hover {
+   color: gray;
+   margin-right: 5px;
+   text-decoration: underline;
+ }
+ 
+ .login__lang > .MuiSvgIcon-root {
+   color: gray;
+ }
+ 
+ .login__footer {
+   padding-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ 
+ .login__footer > p {
+   color: gray;
+   font-size: small;
+   cursor: pointer;
+ }
+ 
+ .login__footer > p:hover {
+   text-decoration: underline;
+ }
+ 
+ /* Responsive styles */
+ 
+ /* Tablets and smaller */
+ @media only screen and (max-width: 1024px) {
+   .login__container {
+     width: 90%;
+   }
+   
+ }
+ 
+ /* Mobile devices */
+ @media only screen and (max-width: 667px) {
+   .login__container {
+     width: 70%;
+   }
+  
+   .login__auth {
+     flex-direction: column;
+   }
+   .login__authOptions {
+     flex: initial;
+     border-right: none;
+     border-bottom: 1px solid lightgray;
+   }
+   .login__authOptions > .fb {
+     margin-left: 0;
+     padding-left: 0;
+     
+   }
+   .login__authOption {
+     margin-bottom: 15px;
+     border: none;
+   }
+   .login__googleAuth-fb {
+     height: 45px;
+   }
+ 
+ 
+   .login__emailPass {
+     flex: initial;
+     margin-left: 0;
+     margin-top: 20px;
+   }
+   .login__label > h4 {
+     font-size: 20px;
+   }
+   .login__inputFields {
+     padding: 8px;
+   }
+   .login__forgButt {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   .login__forgButt > small {
+     margin-bottom: 8px;
+   }
+ }
+ 
+ /* Smaller mobile devices */
+ @media only screen and (max-width: 480px) {
+   .login__container {
+     width: 95%;
+   }
+   .login__desc > h3 {
+     font-size: large;
+   }
+   .login__desc > p {
+     font-size: 16px;
+   }
+   .login__authOption > p {
+     font-size: medium;
+     align-items: center;
+     text-align: center;
+   }
+   
+   .login__authDesc > p {
+     font-size: x-small;
+     
+   }
+   .login__inputField > input {
+     padding: 8px;
+   }
+   .login__forgButt > button {
+     padding: 8px;
+   }
+   .login__emailPass > button {
+     padding: 7px;
+   }
+   .login__lang > p {
+     font-size: 12px;
+   }
+   .login__footer > p {
+     font-size: x-small;
+   }
+ }
+ 
+ /* Base styles */
+ 
+ /* ... existing styles ... */
+ 
+ /* Responsive styles */
+ 
+ /* Tablets and smaller */
+ @media only screen and (max-width: 1024px) {
+   .login__container {
+     width: 90%;
+   }
+   .login__logo img {
+     width: 40%;
+   }
+   .login__desc > h3 {
+     font-size: x-large;
+   }
+   .login__desc > p {
+     font-size: 18px;
+   }
+ }
+ 
+ /* Mobile devices */
+ @media only screen and (max-width: 768px) {
+   .login__container {
+     width: 80%;
+   }
+   .login__logo img {
+     width: 40%;
+   }
+   .login__desc > h3 {
+     font-size: large;
+   }
+   .login__desc > p {
+     font-size: 16px;
+   }
+ }
+ @media only screen and (max-width: 550px) {
+   .login__container {
+     margin-top: 35%;
+     width: 85%;
+   }
+   .login__logo img {
+     width: 30%;
+   }
+   .login__desc > h3 {
+     font-size: large;
+   }
+   .login__desc > p {
+     font-size: 16px;
+   }
+ }
+ 
+ /* Smaller mobile devices */
+ @media only screen and (max-width: 480px) {
+   .login__container {
+     margin-top: 0%;
+     width: 100%;
+   }
+   .login__logo img {
+     margin-top: 20px;
+     width: 35%;
+   }
+   .login__desc > h3 {
+     font-size: large;
+   }
+   .login__desc > p {
+     font-size: 14px;
+   }
+ }
+ @media only screen and (max-width: 380px) {
+   .login__container {
+     margin-top: 55%;
+     width: 100%;
+   }
+   .login__logo img {
+     width: 35%;
+   }
+   .login__desc > h3 {
+     font-size: large;
+   }
+   .login__desc > p {
+     font-size: 14px;
+   }
+ }
+ 

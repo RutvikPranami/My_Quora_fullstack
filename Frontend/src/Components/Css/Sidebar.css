@@ -1,0 +1,10 @@
+.sidebar {
+  /* margin-top: 10px; */
+  margin-right: 10px;
+  flex: 0.2;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
