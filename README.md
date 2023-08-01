@@ -2,7 +2,7 @@ This is QuoraFullStack-clone Using React-Redux and Nodejs || MongoDB
 
 👇🔴Live🔴👇
 
-https://quora-fullstack.onrender.com
+https://my-quora-fullstack-lxn9c7duh-rutvikpranami.vercel.app/
 
 Features:
 Similar to Quora UI with Login Page.
